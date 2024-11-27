@@ -6,7 +6,7 @@ organization = Decidim::Organization.new(
     name: instance_population,
     host: "#{instance_name}.localhost",
     default_locale: "en",
-    available_locales: ['en', 'es', 'fr'],  # default value, considered required for functionality
+    available_locales: ['en'],  # default value, considered required for functionality
     created_at: Time.now,
     updated_at: Time.now,
     description: { "en": "#{instance_population} Council" },
