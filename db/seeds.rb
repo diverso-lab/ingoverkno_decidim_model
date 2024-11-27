@@ -5,11 +5,11 @@ instance_population = ENV['INSTANCE_POPULATION']
 organization = Decidim::Organization.new(
     name: instance_population,
     host: "#{instance_name}.localhost",
-    default_locale: "es",
+    default_locale: "en",
     available_locales: ['en', 'es', 'fr'],  # default value, considered required for functionality
     created_at: Time.now,
     updated_at: Time.now,
-    description: { "es": "Ayuntamiento de #{instance_population}" },
+    description: { "en": "#{instance_population} Council" },
     reference_prefix: "ORG",
     secondary_hosts: [],
     available_authorizations: [],
